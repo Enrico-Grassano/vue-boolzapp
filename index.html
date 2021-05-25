@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>BoolzApp</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+
+    </header>
+    <!-- /Header -->
+
+    <!-- Main -->
+    <div class="wrapper">
+        <!-- Main left -->
+        <div class="left">
+            <!-- Main User -->
+            <div class="main-user">
+                <!-- User profile picture -->
+                <div class="user-img">
+                    <img src="img/avatar_io.jpg" alt="User profile picture">
+                </div>
+                 <!-- /User profile picture -->
+                 <!-- User name -->
+                <h3 id="user-name">Nome Utente</h3>
+                <!-- /User name -->
+                <!-- User icons -->
+                <div class="user-icons">
+                    <i class="fas fa-circle-notch"></i>
+                    <i class="fas fa-comment-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+                <!-- /User icons -->
+            </div>
+            <!-- /Main user -->
+
+            <!-- Bell disclaimer -->
+            <div class="bell-disclaimer">
+                <!-- Bell icon -->
+                <div class="bell-icon">
+                    <i id="bell" class="fas fa-bell-slash"></i>
+                </div>
+                <!-- /Bell icon -->
+                <!-- Notifications -->
+                <div class="notifications-text">
+                    <p>Ricevi notifiche di nuovi messaggi</p>
+                    <p id="activate-notifications">Attiva notifiche desktop</p>
+                </div>
+                <!-- /Notifications -->
+            </div>
+            <!-- /Bell disclaimer -->
+
+            <!-- Search chat-contact -->
+            <div class="search-chat">
+                <div class="search-box">
+                    <i  id="search-icon" class="fas fa-search"></i>
+                <input id="search-chat-bar" type="text" placeholder="Cerca o inizia una nuova chat">
+                </div>
+            </div>
+            <!-- /Search chat-contact -->
+
+            <!-- Contacts -->
+            <div class="contacts-container">
+                <!-- Michele -->
+                <div id="michele" class="contacts">
+                    <!-- Profile picture -->
+                    <div class="contact-img">
+                        <img src="img/avatar_1.jpg" alt="Profile picture">
+                    </div>
+                    <!-- /Profile picture -->
+                    <!-- Name + chat preview -->
+                    <div class="name">
+                        <h3>Michele</h3>
+                        <p class="chat-preview">Tutto fatto! ...</p>
+                    </div>
+                    <!-- Name + chat preview -->
+                     <!-- Date + hour -->
+                     <div class="date-hour">
+                         <p>10/01/2020 16:15:22</p>
+                     </div>
+                     <!-- /Date + hour -->
+                </div>
+                <!-- /Michele -->
+                <!-- Fabio -->
+                <div class="contacts">
+                    <!-- Profile picture -->
+                    <div class="contact-img">
+                        <img src="img/avatar_2.jpg" alt="Profile picture">
+                    </div>
+                    <!-- /Profile picture -->
+                    <!-- Name + chat preview -->
+                    <div class="name">
+                        <h3>Fabio</h3>
+                        <p class="chat-preview">Mi piacerebbe ma devo andare a ...</p>
+                    </div>
+                    <!-- Name + chat preview -->
+                    <!-- Date + hour -->
+                    <div class="date-hour">
+                        <p>20/03/2020 16:35:00</p>
+                    </div>
+                    <!-- /Date + hour -->
+                </div>
+                <!-- /Fabio -->
+                <!-- Samuele -->
+                <div class="contacts">
+                    <!-- Profile picture -->
+                    <div class="contact-img">
+                        <img src="img/avatar_3.jpg" alt="Profile picture">
+                    </div>
+                    <!-- /Profile picture -->
+                    <!-- Name + chat preview -->
+                    <div class="name">
+                        <h3>Samuele</h3>
+                        <p class="chat-preview">Ah scusa! ...</p>
+                    </div>
+                    <!-- Name + chat preview -->
+                     <!-- Date + hour -->
+                     <div class="date-hour">
+                         <p>28/03/2020 16:15:22</p>
+                     </div>
+                     <!-- /Date + hour -->
+                </div>
+                <!-- /Samuele -->
+                <!-- Luisa -->
+                <div class="contacts">
+                    <!-- Profile picture -->
+                    <div class="contact-img">
+                        <img src="img/avatar_6.jpg" alt="Profile picture">
+                    </div>
+                    <!-- Profile picture -->
+                    <!-- Name + chat preview -->
+                    <div class="name">
+                        <h3>Luisa</h3>
+                        <p class="chat-preview">Si, ma preferirei andare al ci ...</p>
+                    </div>
+                    <!-- Name + chat preview -->
+                     <!-- Date + hour -->
+                     <div class="date-hour">
+                         <p>10/01/2020 15:50:00</p>
+                     </div>
+                     <!-- /Date + hour -->
+                </div>
+                <!-- /Luisa -->
+            </div>
+            <!-- /Contacts -->
+        </div>
+        <!-- /Main left -->
+
+        <!-- Main right -->
+        <div class="right">
+            <!-- Chat user -->
+            <div class="chat-user">
+                <!-- User profile picture -->
+                <div class="user-img">
+                    <img src="img/avatar_1.jpg" alt="User profile picture">
+                </div>
+                <!-- /User profile picture -->
+                <!-- User info -->
+                <div class="user-info">
+                    <h3>Michele</h3>
+                    <p>Ultimo accesso oggi alle 10/01/2020 16:15:22</p>
+                </div>
+                <!-- /User info -->
+                <!-- Chat icons -->
+                <div class="chat-icons">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-paperclip"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+                <!-- /Chat icons -->
+            </div>
+            <!-- /Chat user -->
+
+            <!-- Chat box -->
+            <div class="chat-box">
+                <!-- Sent messages -->
+                <div class="sent-messages">
+                    <p>Hai portato a spasso il cane?</p>
+                    <p id="date">10/01/2020 15:30:55</p>
+                </div>
+                <!-- /Sent messages -->
+                <!-- Sent messages -->
+                <div class="sent-messages">
+                    <p>Ricordati di dargli da mangiare.</p>
+                    <p id="date">10/01/2020 15:50:00</p>
+                </div>
+                <!-- /Sent messages -->
+                <!-- Received messages -->
+                <div class="received-messages">
+                    <p>Tutto fatto!</p>
+                    <p id="date">10/01/2020 16:15:22</p>
+                </div>
+                <!-- /Received messages -->
+            </div>
+            <!-- /Chat box -->
+
+            <!-- Message bar -->
+            <div class="write-message">
+                <i id="smile" class="far fa-smile"></i>
+                <input  id="message-bar" type="text" placeholder="Scrivi un messaggio">
+                <i class="fas fa-microphone"></i>
+            </div>
+            <!-- Message bar -->
+        </div>
+        <!-- /Main right -->
+    </div>
+    <!-- /Main -->
+
+    <script src="js/sript.js"></script>
+</body>
+</html>
